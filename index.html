@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Server Join Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .join-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our CS Server</h1>
+    <p>Click the button below to join the server:</p>
+    
+    <!-- Adjust the href attribute to match your CS server connection link -->
+    <a href="steam://connect/thegoons.pracc.club:26411" class="join-button">Join Server</a>
+
+    <script>
+        // Optionally, you can add more functionality using JavaScript
+        // For example, you might want to open the link in a new tab
+        document.querySelector('.join-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.open(this.getAttribute('href'), '_blank');
+        });
+    </script>
+</body>
+</html>
